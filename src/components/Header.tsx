@@ -13,6 +13,7 @@ export function Header({ theme, onToggleTheme }: Props) {
         <span aria-hidden="true">{'</>'}</span> portfolio
       </a>
       <nav aria-label="Hlavní navigace">
+        <a href="#fitbook">FitBook</a>
         <a href="#dovednosti">Dovednosti</a>
         <a href="#projekty">Projekty</a>
         <a href={GITHUB_URL}>GitHub</a>

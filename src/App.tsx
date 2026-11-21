@@ -1,3 +1,4 @@
+import { Ecosystem } from './components/Ecosystem'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { ProjectList } from './components/ProjectList'
@@ -15,6 +16,7 @@ export default function App() {
       <Header theme={theme} onToggleTheme={toggle} />
       <main>
         <Hero projectCount={projects.length} languageCount={languagesByUsage(projects).length} />
+        <Ecosystem />
         <Skills />
         <ProjectList projects={projects} />
       </main>

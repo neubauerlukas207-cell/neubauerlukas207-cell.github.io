@@ -235,6 +235,66 @@ main,
   padding: 2px 0;
 }
 
+/* --- FitBook ----------------------------------------------------------- */
+.section-lead {
+  max-width: 70ch;
+  margin: -12px 0 24px;
+}
+
+.ecosystem {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ecosystem li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1 1 240px;
+}
+
+.service {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  height: 100%;
+  padding: 18px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+
+.service:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+}
+
+.service strong {
+  color: var(--heading);
+  font-size: 1.1rem;
+}
+
+.service-lang {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.arrow {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
 /* --- filtry ------------------------------------------------------------ */
 .filters {
   display: flex;
@@ -422,6 +482,20 @@ main,
 
   .stats {
     gap: 24px;
+  }
+
+  .ecosystem li {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .arrow {
+    text-align: center;
+  }
+
+  .arrow-icon {
+    display: inline-block;
+    transform: rotate(90deg);
   }
 }
 
