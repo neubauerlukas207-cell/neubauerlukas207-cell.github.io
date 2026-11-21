@@ -124,36 +124,12 @@ main,
 
 /* --- úvod -------------------------------------------------------------- */
 .hero {
-  padding: 72px 0 48px;
-}
-
-.eyebrow {
-  color: var(--accent);
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  margin: 0 0 12px;
+  padding: 48px 0 16px;
 }
 
 .hero h1 {
   font-size: clamp(2rem, 5vw, 3.2rem);
-  max-width: 18ch;
-  margin: 0 0 20px;
-}
-
-.accent {
-  color: var(--accent);
-}
-
-.lead {
-  font-size: 1.15rem;
-  max-width: 60ch;
-  margin: 0 0 28px;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  margin: 0;
 }
 
 .button {
@@ -173,16 +149,10 @@ main,
   border-color: var(--accent);
 }
 
-.button.primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-}
-
 .stats {
   display: flex;
   gap: 40px;
-  margin: 48px 0 0;
+  margin: 16px 0 0;
 }
 
 .stats dt {
@@ -236,11 +206,6 @@ main,
 }
 
 /* --- FitBook ----------------------------------------------------------- */
-.section-lead {
-  max-width: 70ch;
-  margin: -12px 0 24px;
-}
-
 .ecosystem {
   display: flex;
   flex-wrap: wrap;
