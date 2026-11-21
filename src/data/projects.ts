@@ -1,4 +1,4 @@
-export type Category = 'web' | 'backend' | 'desktop' | 'mobile' | 'ai' | 'systems' | 'database'
+export type Category = 'web' | 'backend' | 'data' | 'desktop' | 'mobile' | 'ai' | 'systems' | 'database'
 
 export interface Project {
   repo: string
@@ -16,6 +16,7 @@ export interface Project {
 export const CATEGORY_LABELS: Record<Category, string> = {
   web: 'Web',
   backend: 'Backend',
+  data: 'Data',
   desktop: 'Desktop',
   mobile: 'Mobilní',
   ai: 'AI / ML',
@@ -53,6 +54,28 @@ export const projects: Project[] = [
     tech: ['scikit-learn', 'FastAPI', 'Pydantic', 'pytest', 'Docker'],
     year: 2026,
     featured: true,
+  },
+  {
+    repo: 'pathfinding-visualizer',
+    title: 'Hledání cesty',
+    description: 'Interaktivní vizualizace A*, Dijkstry, BFS, DFS a greedy – kreslení zdí a bláta, animace po krocích, porovnání algoritmů. 39 unit a 16 end-to-end testů.',
+    category: 'web',
+    languages: ['TypeScript'],
+    tech: ['Canvas', 'Vite', 'Vitest', 'Playwright'],
+    year: 2026,
+    featured: true,
+    demo: 'https://neubauerlukas207-cell.github.io/pathfinding-visualizer/',
+  },
+  {
+    repo: 'cnb-rates-pipeline',
+    title: 'Kurzy ČNB',
+    description: 'Datová pipeline, která každý pracovní den stáhne kurzy ČNB, zkontroluje kvalitu dat, uloží je do SQLite a publikuje dashboard se statistikami.',
+    category: 'data',
+    languages: ['Python'],
+    tech: ['httpx', 'SQLite', 'pytest', 'Playwright', 'GitHub Actions cron'],
+    year: 2026,
+    featured: true,
+    demo: 'https://neubauerlukas207-cell.github.io/cnb-rates-pipeline/',
   },
   {
     repo: 'neubauerlukas207-cell.github.io',
